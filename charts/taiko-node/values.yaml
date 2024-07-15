@@ -22,6 +22,15 @@ ethereum-node:
   enabled: true
   geth:
     enabled: true
+    readinessProbe:
+      initialDelaySeconds: 30
+      periodSeconds: 5
+      failureThreshold: 3
+      exec:
+        command:
+        - /bin/sh
+        - -c
+        - "geth attach --datadir=/el/data --exec 'eth && eth.blockNumber!=0 && !eth.syncing' | grep true"
   lighthouse:
     enabled: true
   global:

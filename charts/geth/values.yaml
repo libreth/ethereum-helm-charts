@@ -141,14 +141,10 @@ livenessProbe:
 # -- Readiness probe
 # @default -- See `values.yaml`
 readinessProbe:
-  initialDelaySeconds: 30
-  periodSeconds: 5
-  failureThreshold: 3
-  exec:
-    command:
-    - /bin/sh
-    - -c
-    - "geth attach --datadir=/el/data --exec 'eth && eth.blockNumber!=0 && !eth.syncing' | grep true"
+  tcpSocket:
+    port: http-rpc
+  initialDelaySeconds: 10
+  periodSeconds: 10
 
 # -- P2P Port
 p2pPort: 30303
