@@ -4,9 +4,9 @@ dependencies:
   version: 0.1.0
 - name: taiko-client
   repository: file://../taiko-client
-  version: 0.1.0
+  version: 0.1.1
 - name: ethereum-node
   repository: file://../ethereum-node
   version: 0.0.26
-digest: sha256:624087c8b99887f7403350eb7c79bbd28c50963979a4758740f97873a326fc32
-generated: "2024-07-14T20:50:11.471504-04:00"
+digest: sha256:42416bd3eb304f25d0eea72312615c1e6d29d15fa93396770d60634d966913e9
+generated: "2024-07-14T20:58:17.099223-04:00"
