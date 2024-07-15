@@ -24,6 +24,12 @@ This is an umbrella chart for running a Taiko node.
 |-----|------|---------|-------------|
 | ethereum-node.enabled | bool | `true` |  |
 | ethereum-node.geth.enabled | bool | `true` |  |
+| ethereum-node.geth.readinessProbe.exec.command[0] | string | `"/bin/sh"` |  |
+| ethereum-node.geth.readinessProbe.exec.command[1] | string | `"-c"` |  |
+| ethereum-node.geth.readinessProbe.exec.command[2] | string | `"geth attach --datadir=/el/data --exec 'eth && eth.blockNumber!=0 && !eth.syncing' | grep true"` |  |
+| ethereum-node.geth.readinessProbe.failureThreshold | int | `3` |  |
+| ethereum-node.geth.readinessProbe.initialDelaySeconds | int | `30` |  |
+| ethereum-node.geth.readinessProbe.periodSeconds | int | `5` |  |
 | ethereum-node.global.main.network | string | `"holesky"` |  |
 | ethereum-node.lighthouse.enabled | bool | `true` |  |
 | global.network | string | `"hekla"` |  |
