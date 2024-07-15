@@ -46,7 +46,7 @@ A Helm chart for Kubernetes
 | clientArgs.prover[9] | string | `"--tx.minBaseFee={{ (index .Values .Values.global.network).prover.txMinBaseFee }}"` |  |
 | global.endpoints.l1Beacon | string | `"http://{{ .Release.Name }}-beacon:5052"` |  |
 | global.endpoints.l1Http | string | `"http://{{ .Release.Name }}-execution:8545"` |  |
-| global.endpoints.l1Ws | string | `"ws://{{ .Release.Name }}-execution:8545"` |  |
+| global.endpoints.l1Ws | string | `"ws://{{ .Release.Name }}-execution:8546"` |  |
 | global.endpoints.l2Auth | string | `"http://{{ .Release.Name }}-taiko-geth:8551"` |  |
 | global.endpoints.l2Http | string | `"http://{{ .Release.Name }}-taiko-geth:8545"` |  |
 | global.endpoints.l2Ws | string | `"ws://{{ .Release.Name }}-taiko-geth:8546"` |  |
