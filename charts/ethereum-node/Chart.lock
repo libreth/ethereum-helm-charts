@@ -10,7 +10,7 @@ dependencies:
   version: 0.0.8
 - name: geth
   repository: file://../geth
-  version: 1.0.8
+  version: 1.0.9
 - name: nethermind
   repository: file://../nethermind
   version: 1.0.12
@@ -44,5 +44,5 @@ dependencies:
 - name: tracoor-agent
   repository: file://../tracoor-agent
   version: 0.0.1
-digest: sha256:89546918b0e5a4985058e0161ea92aec654b8b31c3c197eaeb3e9926c980fea4
-generated: "2024-03-21T11:50:40.555252+01:00"
+digest: sha256:200340a9b92d62258900ed3d28bd6164abf880d2ba1325216de6b93558dcff43
+generated: "2024-07-14T20:48:22.598701-04:00"
