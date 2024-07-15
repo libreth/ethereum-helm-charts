@@ -11,5 +11,5 @@ dependencies:
     version: "0.1.0"
     repository: "file://../taiko-geth"
   - name: taiko-client
-    version: "0.1.1"
+    version: "0.1.2"
     repository: "file://../taiko-client"
