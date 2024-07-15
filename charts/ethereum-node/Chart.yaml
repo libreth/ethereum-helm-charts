@@ -30,7 +30,7 @@ dependencies:
   repository: "file://../ethereumjs"
   condition: ethereumjs.enabled
 - name: geth
-  version: "1.0.8"
+  version: "1.0.9"
   #repository: "https://ethpandaops.github.io/ethereum-helm-charts"
   repository: "file://../geth"
   condition: geth.enabled
