@@ -8,7 +8,7 @@ maintainers:
 
 dependencies:
   - name: taiko-geth
-    version: "0.1.0"
+    version: "0.1.1"
     repository: "file://../taiko-geth"
   - name: taiko-client
     version: "0.1.3"
