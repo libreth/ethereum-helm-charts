@@ -25,9 +25,15 @@ taiko-client:
     replicaCount: 1
   hekla:
     proposer:
+      proverSetAddress: ""
       suggestedFeeRecipient: ""
+      txGasLimit: "3000000"
       blockProposalFeeGwei: 1
+      blobAllowed: true
   mainnet:
     proposer:
+      proverSetAddress: ""
       suggestedFeeRecipient: ""
+      txGasLimit: "3000000"
       blockProposalFeeGwei: 1
+      blobAllowed: true
