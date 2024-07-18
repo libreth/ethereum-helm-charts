@@ -22,9 +22,9 @@ This is an umbrella chart for running a Taiko node.
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | global.network | string | `"hekla"` |  |
-| taiko-client.global.l1Endpoints.l1Beacon | string | `"http://ethereum-node-beacon:5052"` |  |
-| taiko-client.global.l1Endpoints.l1Http | string | `"http://ethereum-node-execution:8545"` |  |
-| taiko-client.global.l1Endpoints.l1Ws | string | `"ws://ethereum-node-execution:8546"` |  |
+| taiko-client.global.l1Endpoints.l1Beacon | string | `"http://ethereum-node-holesky-beacon:5052"` |  |
+| taiko-client.global.l1Endpoints.l1Http | string | `"http://ethereum-node-holesky-execution:8545"` |  |
+| taiko-client.global.l1Endpoints.l1Ws | string | `"ws://ethereum-node-holesky-execution:8545"` |  |
 | taiko-client.global.mode | string | `"driver"` |  |
 | taiko-client.global.network | string | `"{{ .Values.global.network }}"` |  |
 | taiko-client.global.replicaCount | int | `1` |  |
