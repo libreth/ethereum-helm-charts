@@ -859,6 +859,17 @@ entries:
     version: 0.0.2
   taiko-client:
   - apiVersion: v2
+    created: "2024-07-18T09:43:50.534425024Z"
+    description: A Helm chart for Kubernetes
+    digest: 1953ccbfcf9ed15ab6d371bcf00a99071090941022085244a4fa36ff4add4ea6
+    maintainers:
+    - name: d1onys1us
+    name: taiko-client
+    type: application
+    urls:
+    - https://github.com/libreth/taiko-helm-charts/releases/download/taiko-client-0.1.3/taiko-client-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
     created: "2024-07-15T04:29:05.33293912Z"
     description: A Helm chart for Kubernetes
     digest: f8772500e7a70c85fb73b00980fc5d4e360c466ca38f304ec6496ef5b2146041
@@ -891,7 +902,38 @@ entries:
     urls:
     - https://github.com/libreth/ethereum-helm-charts/releases/download/taiko-client-0.1.0/taiko-client-0.1.0.tgz
     version: 0.1.0
+  taiko-client-guardian:
+  - apiVersion: v2
+    created: "2024-07-18T09:43:50.687744601Z"
+    dependencies:
+    - name: taiko-client
+      repository: file://../taiko-client
+      version: 0.1.3
+    description: A Helm chart for Kubernetes
+    digest: f5faa306959c0d3bd17915991ef4a9e1d24ab5fe2f97aac7892b3304177b2832
+    maintainers:
+    - name: d1onys1us
+    name: taiko-client-guardian
+    type: application
+    urls:
+    - https://github.com/libreth/taiko-helm-charts/releases/download/taiko-client-guardian-0.1.0/taiko-client-guardian-0.1.0.tgz
+    version: 0.1.0
   taiko-client-proposer:
+  - apiVersion: v2
+    created: "2024-07-18T09:43:50.80410127Z"
+    dependencies:
+    - name: taiko-client
+      repository: file://../taiko-client
+      version: 0.1.3
+    description: A Helm chart for Kubernetes
+    digest: 2d0b2038df90ada1b5dc827a8082cf37f598807b942b577636e8a96f4de03b5a
+    maintainers:
+    - name: d1onys1us
+    name: taiko-client-proposer
+    type: application
+    urls:
+    - https://github.com/libreth/taiko-helm-charts/releases/download/taiko-client-proposer-0.1.2/taiko-client-proposer-0.1.2.tgz
+    version: 0.1.2
   - apiVersion: v2
     created: "2024-07-10T23:58:49.935518307Z"
     dependencies:
@@ -909,6 +951,21 @@ entries:
     version: 0.1.0
   taiko-client-prover:
   - apiVersion: v2
+    created: "2024-07-18T09:43:50.971172539Z"
+    dependencies:
+    - name: taiko-client
+      repository: file://../taiko-client
+      version: 0.1.3
+    description: A Helm chart for Kubernetes
+    digest: 30592d375cf20678f8963d9aef49c70bffb352cf3a5142b3ec005de33de0f464
+    maintainers:
+    - name: d1onys1us
+    name: taiko-client-prover
+    type: application
+    urls:
+    - https://github.com/libreth/taiko-helm-charts/releases/download/taiko-client-prover-0.1.2/taiko-client-prover-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     created: "2024-07-10T23:58:50.099055765Z"
     dependencies:
     - name: taiko-client
@@ -925,6 +982,17 @@ entries:
     version: 0.1.0
   taiko-geth:
   - apiVersion: v2
+    created: "2024-07-18T09:43:51.125826455Z"
+    description: A Helm chart for Kubernetes
+    digest: 4bd26d3b9567bc53567c90e49c7dc7e4c20066026ed7f0cb5ba1f6b38dffe578
+    maintainers:
+    - name: d1onys1us
+    name: taiko-geth
+    type: application
+    urls:
+    - https://github.com/libreth/taiko-helm-charts/releases/download/taiko-geth-0.1.1/taiko-geth-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     created: "2024-07-10T23:58:50.266778251Z"
     description: A Helm chart for Kubernetes
     digest: e5c7e5bed25cbeeb766eef322ee4e6ddbc73c21dac488efbfbec1a755b412dcc
@@ -936,6 +1004,24 @@ entries:
     - https://github.com/libreth/ethereum-helm-charts/releases/download/taiko-geth-0.1.0/taiko-geth-0.1.0.tgz
     version: 0.1.0
   taiko-node:
+  - apiVersion: v2
+    created: "2024-07-18T09:43:51.290343608Z"
+    dependencies:
+    - name: taiko-geth
+      repository: file://../taiko-geth
+      version: 0.1.1
+    - name: taiko-client
+      repository: file://../taiko-client
+      version: 0.1.3
+    description: This is an umbrella chart for running a Taiko node.
+    digest: db7ff45d6427e5575fc85c55209af059e72521c29b006a0f761192e77fb9bb9d
+    maintainers:
+    - name: d1onys1us
+    name: taiko-node
+    type: application
+    urls:
+    - https://github.com/libreth/taiko-helm-charts/releases/download/taiko-node-0.1.3/taiko-node-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     created: "2024-07-15T04:29:05.517868743Z"
     dependencies:
@@ -1219,4 +1305,4 @@ entries:
     urls:
     - https://github.com/libreth/ethereum-helm-charts/releases/download/xatu-server-0.0.13/xatu-server-0.0.13.tgz
     version: 0.0.13
-generated: "2024-07-15T04:29:05.51790456Z"
+generated: "2024-07-18T09:43:51.29039788Z"
