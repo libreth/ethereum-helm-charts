@@ -1,6 +1,6 @@
 # taiko-client-prover
 
-![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for Kubernetes
 
@@ -14,7 +14,7 @@ A Helm chart for Kubernetes
 
 | Repository | Name | Version |
 |------------|------|---------|
-| file://../taiko-client | taiko-client | 0.1.2 |
+| file://../taiko-client | taiko-client | 0.1.3 |
 
 ## Values
 
@@ -35,10 +35,12 @@ A Helm chart for Kubernetes
 | taiko-client.global.resources.requests.memory | string | `"500Mi"` |  |
 | taiko-client.global.secret.proverPrivateKey | string | `""` |  |
 | taiko-client.hekla.prover.capacity | int | `1024` |  |
+| taiko-client.hekla.prover.proverSetAddress | string | `""` |  |
 | taiko-client.hekla.prover.raikoHost | string | `""` |  |
 | taiko-client.hekla.prover.txGasLimit | string | `"3000000"` |  |
 | taiko-client.hekla.prover.txMinBaseFee | string | `""` |  |
 | taiko-client.mainnet.prover.capacity | int | `1024` |  |
+| taiko-client.mainnet.prover.proverSetAddress | string | `""` |  |
 | taiko-client.mainnet.prover.raikoHost | string | `""` |  |
 | taiko-client.mainnet.prover.txGasLimit | string | `"3000000"` |  |
 | taiko-client.mainnet.prover.txMinBaseFee | string | `""` |  |
